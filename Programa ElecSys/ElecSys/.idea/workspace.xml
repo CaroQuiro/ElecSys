@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ControladorCon/ContratoControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/DTOCon/ContratoDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/EntidadCon/ContratoEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DetalleCotizacion/DTODetCot/DetalleCotizacionDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DetalleCotizacion/EntidadDetCot/DetalleCotizacionEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DetalleCotizacion/ServicioDetCot/DetalleCotizacionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DetalleCotizacion/ServicioDetCot/DetalleCotizacionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/DTOCuen/CuentaPorPagarDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/EntidadCuen/CuentaPorPagarEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ControladorClie/ClienteControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/DTOClie/ClienteDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/EntidadClie/ClienteEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ServicioClie/ClienteImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ServicioClie/ClienteInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/DTOTra/TrabajadorDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TrabajadorEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="345QF9h5FtqVxLbF3S65jFCt3ri" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ElecSysApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElecSysApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ivanc/Documents/GitHub/ElecSys/Programa ElecSys/ElecSys&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="co.edu.unbosque.ElecSys.Cotizacion.EntidadCot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ElecSysApplication">
+    <configuration name="ElecSysApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.edu.unbosque.ElecSys.ElecSysApplication" />
+      <module name="ElecSys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.unbosque.ElecSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElecSysApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ElecSys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.unbosque.ElecSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.unbosque.ElecSys" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.unbosque.ElecSys.ElecSysApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ElecSysApplication" />
+        <item itemvalue="JUnit.ElecSysApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="" />
+      <created>1760500846624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760500846624</updated>
+    </task>
+    <servers />
+  </component>
+</project>

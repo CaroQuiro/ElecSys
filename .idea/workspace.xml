@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3309fadf-68b4-483c-9d8d-83712bc85f6d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/estadoCotizacion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Programa ElecSys/ElecSys/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="34AwqpiJW3E5TGWcuCUFFogCZil" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/ivanc/Documents/GitHub/ElecSys",
+    "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3309fadf-68b4-483c-9d8d-83712bc85f6d" name="Changes" comment="" />
+      <created>1760669877389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760669877389</updated>
+    </task>
+    <servers />
+  </component>
+</project>
