@@ -1,33 +1,67 @@
 package co.edu.unbosque.ElecSys.Ordenes.OrdenDeVisita.DTOOrdVis;
 
-import java.util.Date;
+import java.sql.Date;
 
 public class OrdenDeVisitaDTO {
 
-    private int id_orden_visita;
-    private Date fecha;
+    private int idVisita;
+    private int idLugar;
+    private int idCliente;
+    private int idTrabajador;
+    private Date fechaRealizacion;
     private String descripcion;
+    private String estado;
 
-    public OrdenDeVisitaDTO(int id_orden_visita, Date fecha, String descripcion) {
-        this.id_orden_visita = id_orden_visita;
-        this.fecha = fecha;
+    public OrdenDeVisitaDTO() {}
+
+    public OrdenDeVisitaDTO(int idVisita, int idLugar, int idCliente, int idTrabajador, Date fechaRealizacion, String descripcion, String estado) {
+        this.idVisita = idVisita;
+        this.idLugar = idLugar;
+        this.idCliente = idCliente;
+        this.idTrabajador = idTrabajador;
+        this.fechaRealizacion = fechaRealizacion;
         this.descripcion = descripcion;
+        this.estado = estado;
     }
 
-    public int getId_orden_visita() {
-        return id_orden_visita;
+    public int getIdVisita() {
+        return idVisita;
     }
 
-    public void setId_orden_visita(int id_orden_visita) {
-        this.id_orden_visita = id_orden_visita;
+    public void setIdVisita(int idVisita) {
+        this.idVisita = idVisita;
     }
 
-    public Date getFecha() {
-        return fecha;
+    public int getIdLugar() {
+        return idLugar;
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    public void setIdLugar(int idLugar) {
+        this.idLugar = idLugar;
+    }
+
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public int getIdTrabajador() {
+        return idTrabajador;
+    }
+
+    public void setIdTrabajador(int idTrabajador) {
+        this.idTrabajador = idTrabajador;
+    }
+
+    public Date getFechaRealizacion() {
+        return fechaRealizacion;
+    }
+
+    public void setFechaRealizacion(Date fechaRealizacion) {
+        this.fechaRealizacion = fechaRealizacion;
     }
 
     public String getDescripcion() {
@@ -36,5 +70,13 @@ public class OrdenDeVisitaDTO {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
 }
