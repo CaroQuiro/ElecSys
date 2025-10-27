@@ -14,7 +14,7 @@ public interface NotificacionInterface {
 
     public List<NotificacionDTO> listarNotificaciones();
 
-    public List<NotificacionDTO> listarNotificacionesPor(int idUsuario);
+    //public List<NotificacionDTO> listarNotificacionesPor(int idUsuario);
 
     public NotificacionDTO buscarNotificacion(int idNotificacion);
 }

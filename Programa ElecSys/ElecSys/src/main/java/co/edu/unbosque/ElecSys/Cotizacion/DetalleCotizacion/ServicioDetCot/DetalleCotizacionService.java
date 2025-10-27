@@ -2,6 +2,7 @@ package co.edu.unbosque.ElecSys.Cotizacion.DetalleCotizacion.ServicioDetCot;
 
 import co.edu.unbosque.ElecSys.Cotizacion.DetalleCotizacion.DTODetCot.DetalleCotizacionDTO;
 import co.edu.unbosque.ElecSys.Cotizacion.DetalleCotizacion.EntidadDetCot.DetalleCotizacionEntidad;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,6 +12,7 @@ import java.util.Optional;
 @Service
 public class DetalleCotizacionService implements DetalleCotizacionInterface{
 
+    @Autowired
     private DetalleCotizacionRepository detalleCotizacionRepository;
 
     @Override

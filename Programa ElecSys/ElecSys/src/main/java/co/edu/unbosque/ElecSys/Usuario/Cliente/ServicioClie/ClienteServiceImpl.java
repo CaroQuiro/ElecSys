@@ -34,6 +34,16 @@ public class ClienteServiceImpl implements ClienteInterface{
 
     @Override
     public ClienteDTO buscarCliente(int id) {
+        ClienteEntidad cliente = clienteRepository.findById(id).orElse(null);
+        if (cliente != null){
+            return new ClienteDTO(
+                    cliente.getId_cliente(),
+                    cliente.getNombre(),
+                    cliente.getTelefono(),
+                    cliente.getDireccion(),
+                    cliente.getCorreo());
+        }
+
         return null;
     }
 

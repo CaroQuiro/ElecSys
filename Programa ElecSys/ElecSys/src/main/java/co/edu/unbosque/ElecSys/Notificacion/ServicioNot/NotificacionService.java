@@ -117,29 +117,29 @@ public class NotificacionService implements NotificacionInterface{
      * @param idUsuario
      * @return
      */
-    @Override
-    public List<NotificacionDTO> listarNotificacionesPor(int idUsuario) {
-        try {
-            List<NotificacionEntidad> notificacionEntidades = notificacionRepository.findAllByIdUsuario(idUsuario);
-            List<NotificacionDTO> notificacionDtos = new ArrayList<>();
-
-            for(NotificacionEntidad notificacion : notificacionEntidades){
-                notificacionDtos.add(new NotificacionDTO(
-                        notificacion.getIdNotificacion(),
-                        notificacion.getIdTrabajador(),
-                        notificacion.getIdCliente(),
-                        notificacion.getTitulo(),
-                        notificacion.getMensaje(),
-                        notificacion.getFechaEnvio(),
-                        notificacion.getFrecuencia(),
-                        notificacion.getTipoDestinatario(),
-                        notificacion.getEstado()));
-            };
-            return notificacionDtos;
-        } catch (Exception e) {
-            return List.of();
-        }
-    }
+//    @Override
+//    public List<NotificacionDTO> listarNotificacionesPor(int idUsuario) {
+////        try {
+////            List<NotificacionEntidad> notificacionEntidades = notificacionRepository.findAllByIdUsuario(idUsuario);
+////            List<NotificacionDTO> notificacionDtos = new ArrayList<>();
+////
+////            for(NotificacionEntidad notificacion : notificacionEntidades){
+////                notificacionDtos.add(new NotificacionDTO(
+////                        notificacion.getIdNotificacion(),
+////                        notificacion.getIdTrabajador(),
+////                        notificacion.getIdCliente(),
+////                        notificacion.getTitulo(),
+////                        notificacion.getMensaje(),
+////                        notificacion.getFechaEnvio(),
+////                        notificacion.getFrecuencia(),
+////                        notificacion.getTipoDestinatario(),
+////                        notificacion.getEstado()));
+////            };
+////            return notificacionDtos;
+////        } catch (Exception e) {
+////            return List.of();
+////        }
+//    }
 
     /**
      * @param idNotificacion

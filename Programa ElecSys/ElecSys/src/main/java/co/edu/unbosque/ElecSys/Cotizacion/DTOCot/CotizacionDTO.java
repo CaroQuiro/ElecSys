@@ -16,13 +16,15 @@ public class CotizacionDTO {
     private int id_trabajador;
     private int id_cliente;
     private int id_lugar;
-    private LocalDate fecha_realizada;
+    private LocalDate fecha_realizacion;
     private String referencia;
     private BigDecimal valor_total;
     private estadoCotizacion estado;
     private BigDecimal administracion;
     private BigDecimal imprevistos;
     private BigDecimal utilidad;
+    private BigDecimal iva;
+    private  BigDecimal total_pagar;
 
 
 }

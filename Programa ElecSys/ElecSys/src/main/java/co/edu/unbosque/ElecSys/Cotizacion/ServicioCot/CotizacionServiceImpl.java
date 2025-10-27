@@ -22,13 +22,15 @@ public class CotizacionServiceImpl implements CotizacionInterface{
                 cotizacion.getId_trabajador(),
                 cotizacion.getId_cliente(),
                 cotizacion.getId_lugar(),
-                cotizacion.getFecha_realizada(),
+                cotizacion.getFecha_realizacion(),
                 cotizacion.getReferencia(),
                 cotizacion.getValor_total(),
                 cotizacion.getEstado(),
                 cotizacion.getAdministracion(),
                 cotizacion.getImprevistos(),
-                cotizacion.getUtilidad()
+                cotizacion.getUtilidad(),
+                cotizacion.getIva(),
+                cotizacion.getTotal_pagar()
                 );
         try {
             cotizacionRepository.save(nuevaCotizacion);
@@ -38,26 +40,27 @@ public class CotizacionServiceImpl implements CotizacionInterface{
         }
     }
 
-//    @Override
-//    public CotizacionDTO buscarCotizacion(int id) {
-//        CotizacionEntidad cotizacion = cotizacionRepository.findById(id).orElse(null);
-//        if (cotizacion == null){
-//            return null;
-//        }else{
-//            return new CotizacionDTO(
-//                    cotizacion.getId_cotizacion(),
-//                    cotizacion.getId_trabajador(),
-//                    cotizacion.getId_cliente(),
-//                    cotizacion.getId_lugar(),
-//                    cotizacion.getFecha_realizada(),
-//                    cotizacion.getReferencia(),
-//                    cotizacion.getValor_total(),
-//                    cotizacion.getEstado(),
-//                    cotizacion.getAdministracion(),
-//                    cotizacion.getImprevistos(),
-//                    cotizacion.getUtilidad());
-//        }
-//    }
+    @Override
+    public CotizacionDTO buscarCotizacion(int id) {
+        CotizacionEntidad cotizacion = cotizacionRepository.findById(id).orElse(null);
+        if (cotizacion == null){
+            return null;
+        }else{
+            return new CotizacionDTO(
+                    cotizacion.getId_cotizacion(),
+                    cotizacion.getId_trabajador(),
+                    cotizacion.getId_cliente(),
+                    cotizacion.getId_lugar(),
+                    cotizacion.getFecha_realizada(),
+                    cotizacion.getReferencia(),
+                    cotizacion.getValor_total(),
+                    cotizacion.getEstado(),
+                    cotizacion.getAdministracion(),
+                    cotizacion.getImprevistos(),
+                    cotizacion.getUtilidad(),cotizacion.getIva(),
+                    cotizacion.getTotal_pagar());
+        }
+    }
 
     @Override
     public String borrarCotizacion(int id) {
@@ -86,7 +89,9 @@ public class CotizacionServiceImpl implements CotizacionInterface{
                     cotizaciones.getEstado(),
                     cotizaciones.getAdministracion(),
                     cotizaciones.getImprevistos(),
-                    cotizaciones.getUtilidad()
+                    cotizaciones.getUtilidad(),
+                    cotizaciones.getIva(),
+                    cotizaciones.getTotal_pagar()
                     ));
         }
         return cotizacionDTOS;
@@ -103,7 +108,7 @@ public class CotizacionServiceImpl implements CotizacionInterface{
             entidad.setId_trabajador(cotizacion.getId_trabajador());
             entidad.setId_cliente(cotizacion.getId_cliente());
             entidad.setId_lugar(cotizacion.getId_lugar());
-            entidad.setFecha_realizada(cotizacion.getFecha_realizada());
+            entidad.setFecha_realizada(cotizacion.getFecha_realizacion());
             entidad.setReferencia(cotizacion.getReferencia());
             entidad.setValor_total(cotizacion.getValor_total());
             entidad.setEstado(cotizacion.getEstado());
@@ -114,5 +119,9 @@ public class CotizacionServiceImpl implements CotizacionInterface{
             cotizacionRepository.save(entidad);
             return "Cotizacion Actualizada Correctamente";
         }
+    }
+
+    public Boolean existirCot(int id){
+        return cotizacionRepository.existsById(id);
     }
 }

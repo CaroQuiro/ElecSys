@@ -51,4 +51,10 @@ public class CotizacionEntidad {
     @Column(name = "utilidad")
     private BigDecimal utilidad;
 
+    @Column(name = "iva")
+    private BigDecimal iva;
+
+    @Column(name = "total_pagar")
+    private BigDecimal total_pagar;
+
 }
