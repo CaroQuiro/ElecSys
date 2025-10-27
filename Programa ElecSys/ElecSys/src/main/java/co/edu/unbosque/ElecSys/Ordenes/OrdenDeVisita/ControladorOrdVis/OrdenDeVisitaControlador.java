@@ -19,6 +19,6 @@ public class OrdenDeVisitaControlador {
 
     @PostMapping
     public void crear(@RequestBody OrdenDeVisitaDTO dto) {
-        service.guardar(dto);
+        //service.guardar(dto);
     }
 }

@@ -25,6 +25,9 @@ public class LugarTrabajoEntidad {
         this.direccion = direccion;
     }
 
+    public LugarTrabajoEntidad() {
+    }
+
     public int getId_lugar() {
         return id_lugar;
     }
