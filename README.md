@@ -1,2 +1,0 @@
-# ElecSys
-Repositorio del proyecto
