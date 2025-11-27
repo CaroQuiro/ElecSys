@@ -20,7 +20,7 @@ public class ConfiguracionEmail {
 
     public ConfiguracionEmail() {
         this.email = "ao818872@gmail.com";
-        this.contrasena = "kuldvbpkgeuyvwfb";
+        this.contrasena = "";
         this.mProperties = new Properties();
     }
 
