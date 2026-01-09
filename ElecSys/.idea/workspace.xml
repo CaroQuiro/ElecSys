@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Config/Excepcion/DuplicateResourceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Config/Excepcion/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Config/Excepcion/InvalidFieldException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Config/Excepcion/PdfGenerationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Config/Excepcion/ResourceNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/AutenticacionSeguridad/AutenticacionControlador.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/AutenticacionSeguridad/AutenticacionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/AutenticacionSeguridad/AutenticaciónImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/AutenticacionSeguridad/GeneradorJwt.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/AutenticacionSeguridad/JwtFiltro.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Config/ManejoExcepcionConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/estadoCotizacion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/DTOCuen/CuentaPorPagarDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/DTOCuen/CuentaPorPagarDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/EntidadCuen/CuentaPorPagarEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/EntidadCuen/CuentaPorPagarEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarImplService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarImplService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ControladorHis/HistorialActividadControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ControladorHis/HistorialActividadControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/DetalleActividad/ServicioDetalleActividad/DetalleActividadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/DetalleActividad/ServicioDetalleActividad/DetalleActividadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/LugarTrabajo/ControladorLug/LugarTrabajoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/LugarTrabajo/ControladorLug/LugarTrabajoControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/LugarTrabajo/ServicioLug/LugarTrabajoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/LugarTrabajo/ServicioLug/LugarTrabajoInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/LugarTrabajo/ServicioLug/LugarTrabajoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/LugarTrabajo/ServicioLug/LugarTrabajoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/CalendarioNot/NotificacionCalendario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/ControladorNot/NotificacionControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/ControladorNot/NotificacionControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/DTONot/NotificacionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/DTONot/NotificacionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/EntidadNot/NotificacionEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/EntidadNot/NotificacionEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/EnvioEmail/ConfiguracionEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/EnvioEmail/ConfiguracionEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/ServicioNot/NotificacionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/ServicioNot/NotificacionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/ServicioNot/NotificacionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Notificacion/ServicioNot/NotificacionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/DetalleOrden/DTODetOrd/DetalleOrdenDTO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/DetalleOrden/EntidadDetOrd/DetalleOrdenEntidad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/DetalleOrden/ServicioDetOrd/DetalleOrdenInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/DetalleOrden/ServicioDetOrd/DetalleOrdenRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/DetalleOrden/ServicioDetOrd/DetalleOrdenService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/ControladorOrdTra/OrdenDeTrabajoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/ControladorOrdTra/OrdenDeTrabajoControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/DTOOrdTra/OrdenDeTrabajoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/DTOOrdTra/OrdenDeTrabajoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/EntidadOrdTra/OrdenDeTrabajoEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/EntidadOrdTra/OrdenDeTrabajoEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/ServicioOrdTra/OrdenDeTrabajoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/ServicioOrdTra/OrdenDeTrabajoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/ServicioOrdTra/OrdenDeTrabajoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeTrabajo/ServicioOrdTra/OrdenDeTrabajoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/ControladorOrdVis/OrdenDeVisitaControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/ControladorOrdVis/OrdenDeVisitaControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/EntidadOrdVis/OrdenDeVisitaEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/EntidadOrdVis/OrdenDeVisitaEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/ServicioOrdVis/OrdenDeVisitaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/ServicioOrdVis/OrdenDeVisitaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/ServicioOrdVis/OrdenVisitaRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Ordenes/OrdenDeVisita/ServicioOrdVis/OrdenVisitaRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ControladorClie/ClienteControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ControladorClie/ClienteControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/DTOClie/ClienteDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/DTOClie/ClienteDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/EntidadClie/ClienteEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/EntidadClie/ClienteEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ServicioClie/ClienteInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ServicioClie/ClienteInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ServicioClie/ClienteServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Cliente/ServicioClie/ClienteServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/DTOTra/TrabajadorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/DTOTra/TrabajadorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TipoUsuario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TrabajadorEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TrabajadorEntidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Config/ManejoExcepcionConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/ControladorCot/CotizacionControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/DTOCot/CotizacionDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/CotizacionEntidad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/EntidadCot/estadoCotizacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/ServicioCot/CotizacionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarImplService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarImplService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/CuentaPorPagar/ServicioCuen/CuentaPorPagarInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ControladorHis/HistorialActividadControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ControladorHis/HistorialActividadControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/HistorialActividad/ServicioHis/HistorialActividadService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/LugarTrabajo/ControladorLug/LugarTrabajoControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/LugarTrabajo/ControladorLug/LugarTrabajoControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Cliente/ControladorClie/ClienteControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Cliente/ControladorClie/ClienteControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/DTOTra/TrabajadorDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/DTOTra/TrabajadorDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TipoUsuario.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TrabajadorEntidad.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/EntidadTra/TrabajadorEntidad.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/ServicioTra/TrabajadorServiceImpl.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="345QF9h5FtqVxLbF3S65jFCt3ri" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ElecSysApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ElecSysApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Proyecto de grado/Programa ElecSys/ElecSys&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="co.edu.unbosque.ElecSys.Cotizacion.EntidadCot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.ElecSysApplication">
+    <configuration name="ElecSysApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.edu.unbosque.ElecSys.ElecSysApplication" />
+      <module name="ElecSys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.unbosque.ElecSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElecSysApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ElecSys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.edu.unbosque.ElecSys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.edu.unbosque.ElecSys" />
+      <option name="MAIN_CLASS_NAME" value="co.edu.unbosque.ElecSys.ElecSysApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ElecSysApplication" />
+        <item itemvalue="JUnit.ElecSysApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="" />
+      <created>1760500846624</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760500846624</updated>
+    </task>
+    <servers />
+  </component>
+</project>
