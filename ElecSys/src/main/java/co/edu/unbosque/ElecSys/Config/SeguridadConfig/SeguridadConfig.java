@@ -1,6 +1,5 @@
-package co.edu.unbosque.ElecSys.Config;
+package co.edu.unbosque.ElecSys.Config.SeguridadConfig;
 
-import co.edu.unbosque.ElecSys.AutenticacionSeguridad.SeguridadAut.JwtAuthenticationFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -10,10 +9,10 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
-public class SecuridadConfig {
+public class SeguridadConfig {
     private final JwtAuthenticationFilter jwtFilter;
 
-    public SecuridadConfig(JwtAuthenticationFilter jwtFilter) {
+    public SeguridadConfig(JwtAuthenticationFilter jwtFilter) {
         this.jwtFilter = jwtFilter;
     }
 
@@ -38,3 +37,4 @@ public class SecuridadConfig {
         return config.getAuthenticationManager();
     }
 }
+
