@@ -1,6 +1,7 @@
 package co.edu.unbosque.ElecSys.Cotizacion.ControladorCot;
 
 import co.edu.unbosque.ElecSys.Cotizacion.Archivo.Pdf_Cotizacion;
+import co.edu.unbosque.ElecSys.Cotizacion.DTOCot.AIUDTO;
 import co.edu.unbosque.ElecSys.Cotizacion.DTOCot.CotizacionRequest;
 import co.edu.unbosque.ElecSys.Cotizacion.DetalleCotizacion.DTODetCot.DetalleCotizacionDTO;
 import co.edu.unbosque.ElecSys.Cotizacion.DetalleCotizacion.ServicioDetCot.DetalleCotizacionService;
@@ -24,6 +25,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/cotizaciones")
 public class CotizacionControlador {
 
@@ -126,10 +128,26 @@ public class CotizacionControlador {
             );
 
         } else {
+            AIUDTO aiu = solicitud.getAiudto();
 
-            administracion = valorTotal.multiply(new BigDecimal("0.07"));
-            imprevistos = valorTotal.multiply(new BigDecimal("0.05"));
-            utilidades = valorTotal.multiply(new BigDecimal("0.04"));
+            BigDecimal adminPct = BigDecimal.ZERO;
+            BigDecimal imprePct = BigDecimal.ZERO;
+            BigDecimal utilPct  = BigDecimal.ZERO;
+
+            if (aiu != null) {
+                if (aiu.getAdministracion() != null)
+                    adminPct = aiu.validarPorcentaje(aiu.getAdministracion());
+
+                if (aiu.getImprevistos() != null)
+                    imprePct = aiu.validarPorcentaje(aiu.getImprevistos());
+
+                if (aiu.getUtilidad() != null)
+                    utilPct = aiu.validarPorcentaje(aiu.getUtilidad());
+            }
+
+            administracion = valorTotal.multiply(adminPct);
+            imprevistos = valorTotal.multiply(imprePct);
+            utilidades = valorTotal.multiply(utilPct);
             iva = utilidades.multiply(new BigDecimal("0.19"));
 
             totalPagar = valorTotal
@@ -156,7 +174,7 @@ public class CotizacionControlador {
         }
 
         // Guardar cotización
-        service.agregarCotizacion(cotFull);
+        cotFull = service.agregarCotizacion(cotFull);
 
         // Guardar detalles
         for (DetalleCotizacionDTO d : detalles) {
@@ -196,12 +214,9 @@ public class CotizacionControlador {
     // --------------------------------------------------
     @GetMapping("/buscar/{id}")
     public CotizacionDTO buscarCotizacion(@PathVariable int id) {
-
         CotizacionDTO cot = service.buscarCotizacion(id);
-
         if (cot == null)
             throw new ResourceNotFoundException("No existe la cotización con ID: " + id);
-
         return cot;
     }
 
@@ -211,7 +226,6 @@ public class CotizacionControlador {
     // --------------------------------------------------
     @GetMapping("/{id}/detalles")
     public List<DetalleCotizacionDTO> obtenerDetalles(@PathVariable int id) {
-
         if (!service.existirCot(id))
             throw new ResourceNotFoundException("No existe la cotización con ID: " + id);
 
@@ -263,7 +277,6 @@ public class CotizacionControlador {
     // --------------------------------------------------
     @DeleteMapping("/borrar/{idCot}/detalle/{idDetalle}")
     public String borrarDetalle(@PathVariable int idCot, @PathVariable int idDetalle) {
-
         if (!service.existirCot(idCot))
             throw new ResourceNotFoundException("No existe la cotización con ID: " + idCot);
 
@@ -291,6 +304,8 @@ public class CotizacionControlador {
                                     @PathVariable int idDetalle,
                                     @RequestBody DetalleCotizacionDTO dto) {
 
+        System.out.println("ID COTIZACION ACTUAL: " + idCot);
+
         if (!service.existirCot(idCot))
             throw new ResourceNotFoundException("No existe la cotización con ID: " + idCot);
 
@@ -316,4 +331,33 @@ public class CotizacionControlador {
 
         return detalleService.actualizarDetalle(idDetalle, dto);
     }
+
+    // --------------------------------------------------
+// CREAR DETALLE EN COTIZACIÓN EXISTENTE
+// --------------------------------------------------
+    @PostMapping("/{idCot}/detalle")
+    public ResponseEntity<String> agregarDetalle(
+            @PathVariable int idCot,
+            @RequestBody DetalleCotizacionDTO dto) {
+
+        if (!service.existirCot(idCot))
+            throw new ResourceNotFoundException("No existe la cotización con ID: " + idCot);
+
+        if (dto.getCantidad() <= 0)
+            throw new InvalidFieldException("La cantidad debe ser mayor a cero.");
+
+        if (dto.getValor_unitario().compareTo(BigDecimal.ZERO) <= 0)
+            throw new InvalidFieldException("El valor unitario debe ser mayor a cero.");
+
+        dto.setId_cotizacion(idCot);
+
+        dto.setSubtotal(
+                dto.getValor_unitario().multiply(new BigDecimal(dto.getCantidad()))
+        );
+
+        detalleService.agregarDetalleCot(dto);
+
+        return ResponseEntity.ok("Detalle agregado correctamente.");
+    }
+
 }

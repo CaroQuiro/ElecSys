@@ -1,6 +1,6 @@
 package co.edu.unbosque.ElecSys.Notificacion.ServicioNot;
 
-import co.edu.unbosque.ElecSys.AutenticacionSeguridad.SeguridadAut.CryptoUtil;
+
 import co.edu.unbosque.ElecSys.Notificacion.DTONot.NotificacionDTO;
 import co.edu.unbosque.ElecSys.Notificacion.EntidadNot.NotificacionDestinatarioEntidad;
 import co.edu.unbosque.ElecSys.Notificacion.EntidadNot.NotificacionEntidad;
@@ -56,7 +56,7 @@ public class NotificacionService implements NotificacionInterface {
         try {
             NotificacionEntidad notificacion = new NotificacionEntidad();
             notificacion.setTitulo(dto.getTitulo());
-            notificacion.setMensaje(CryptoUtil.encriptar(dto.getMensaje()));
+            notificacion.setMensaje(dto.getMensaje());
             notificacion.setTipo(dto.getTipo());       // UNICA | RECURRENTE
             notificacion.setEstado("ACTIVA");
             notificacion.setFechaCreacion(LocalDateTime.now());
@@ -78,7 +78,7 @@ public class NotificacionService implements NotificacionInterface {
         return notificacionRepository.findById((int) idNotificacionAnt)
                 .map(notificacion -> {
                     notificacion.setTitulo(notificacionNueva.getTitulo());
-                    notificacion.setMensaje(CryptoUtil.encriptar(notificacionNueva.getMensaje()));
+                    notificacion.setMensaje(notificacionNueva.getMensaje());
                     notificacion.setTipo(notificacionNueva.getTipo());
                     notificacionRepository.save(notificacion);
                     return "Notificación editada correctamente";
@@ -220,7 +220,7 @@ public class NotificacionService implements NotificacionInterface {
         return new NotificacionDTO(
                 entidad.getIdNotificacion(),   // ya es Long → se convierte a long
                 entidad.getTitulo(),
-                CryptoUtil.desencriptar(entidad.getMensaje()),
+                entidad.getMensaje(),
                 entidad.getTipo(),
                 entidad.getEstado(),
                 entidad.getFechaCreacion()     // ya es LocalDateTime

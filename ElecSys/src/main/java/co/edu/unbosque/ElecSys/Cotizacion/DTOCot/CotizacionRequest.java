@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Data
@@ -15,5 +16,6 @@ public class CotizacionRequest {
     private CotizacionDTO cotizacion;
     private List<DetalleCotizacionDTO> detalleCotizacionDTOS;
     private Boolean existIva;
+    private AIUDTO aiudto;
 
 }

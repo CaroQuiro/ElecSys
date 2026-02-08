@@ -1,6 +1,5 @@
 package co.edu.unbosque.ElecSys.Usuario.Cliente.ServicioClie;
 
-import co.edu.unbosque.ElecSys.AutenticacionSeguridad.SeguridadAut.CryptoUtil;
 import co.edu.unbosque.ElecSys.Usuario.Cliente.DTOClie.ClienteDTO;
 import co.edu.unbosque.ElecSys.Usuario.Cliente.EntidadClie.ClienteEntidad;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +19,9 @@ public class ClienteServiceImpl implements ClienteInterface{
     public String agregarCliente(ClienteDTO cliente) {
         ClienteEntidad nuevoCliente = new ClienteEntidad(
           cliente.getId_cliente(),
-                CryptoUtil.encriptar(cliente.getNombre()),
-                CryptoUtil.encriptar(cliente.getTelefono()),
-                CryptoUtil.encriptar(cliente.getDireccion()),
+                cliente.getNombre(),
+                cliente.getTelefono(),
+                cliente.getDireccion(),
           cliente.getCorreo(),
                 cliente.getEstado()
         );
@@ -40,13 +39,28 @@ public class ClienteServiceImpl implements ClienteInterface{
         if (cliente != null){
             return new ClienteDTO(
                     cliente.getId_cliente(),
-                    CryptoUtil.desencriptar(cliente.getNombre()),
-                    CryptoUtil.desencriptar(cliente.getTelefono()),
-                    CryptoUtil.desencriptar(cliente.getDireccion()),
+                    cliente.getNombre(),
+                    cliente.getTelefono(),
+                    cliente.getDireccion(),
                     cliente.getCorreo(),
                     cliente.getEstado());
         }
+        return null;
+    }
 
+    @Override
+    public List<ClienteDTO> buscarClienteTexto(String query) {
+        List<ClienteEntidad> cliente = clienteRepository.buscarClienteTexto(query);
+        if (cliente != null){
+            return cliente.stream().map( c -> new ClienteDTO(
+                    c.getId_cliente(),
+                    c.getNombre(),
+                    c.getTelefono(),
+                    c.getDireccion(),
+                    c.getCorreo(),
+                    c.getEstado()
+            )).toList();
+        }
         return null;
     }
 
@@ -73,9 +87,9 @@ public class ClienteServiceImpl implements ClienteInterface{
         for (ClienteEntidad clientes : cliente){
             clienteDTOS.add(new ClienteDTO(
                     clientes.getId_cliente(),
-                    CryptoUtil.desencriptar(clientes.getNombre()),
-                    CryptoUtil.desencriptar(clientes.getTelefono()),
-                            CryptoUtil.desencriptar(clientes.getDireccion()),
+                    clientes.getNombre(),
+                    clientes.getTelefono(),
+                    clientes.getDireccion(),
                     clientes.getCorreo(),
                     clientes.getEstado()
             ));
@@ -93,9 +107,9 @@ public class ClienteServiceImpl implements ClienteInterface{
         }else {
             ClienteEntidad entidad = clienteExit.get();
 
-            entidad.setNombre(CryptoUtil.encriptar(cliente.getNombre()));
-            entidad.setTelefono(CryptoUtil.encriptar(cliente.getTelefono()));
-            entidad.setDireccion(CryptoUtil.encriptar(cliente.getDireccion()));
+            entidad.setNombre(cliente.getNombre());
+            entidad.setTelefono(cliente.getTelefono());
+            entidad.setDireccion(cliente.getDireccion());
             entidad.setCorreo(cliente.getCorreo());
             entidad.setEstado(cliente.getEstado());
 

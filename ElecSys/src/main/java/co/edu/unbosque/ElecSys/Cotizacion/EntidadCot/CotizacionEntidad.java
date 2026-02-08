@@ -17,8 +17,17 @@ import java.time.LocalDate;
 public class CotizacionEntidad {
 
     @Id
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "cotizacion_seq"
+    )
+    @SequenceGenerator(
+            name = "cotizacion_seq",
+            sequenceName = "seq_cotizacion_id",
+            allocationSize = 1 //Importante para que no se salte numeros ni nada.
+    )
     @Column(name = "id_cotizacion")
-    private int id_cotizacion;
+    private Integer id_cotizacion;
 
     @Column(name = "id_trabajador")
     private int id_trabajador;

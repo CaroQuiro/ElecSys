@@ -1,6 +1,6 @@
 package co.edu.unbosque.ElecSys.Usuario.Trabajador.ServicioTra;
 
-import co.edu.unbosque.ElecSys.AutenticacionSeguridad.SeguridadAut.CryptoUtil;
+
 import co.edu.unbosque.ElecSys.Usuario.Cliente.DTOClie.ClienteDTO;
 import co.edu.unbosque.ElecSys.Usuario.Cliente.EntidadClie.ClienteEntidad;
 import co.edu.unbosque.ElecSys.Usuario.Trabajador.DTOTra.TrabajadorDTO;
@@ -28,9 +28,9 @@ public class TrabajadorServiceImpl implements TrabajadorInterface{
 
         TrabajadorEntidad nuevoTrabajador = new TrabajadorEntidad(
                 trabajadorDTO.getId_trabajador(),
-                CryptoUtil.encriptar(trabajadorDTO.getNombre()),
-                CryptoUtil.encriptar(trabajadorDTO.getTelefono()),
-                        CryptoUtil.encriptar(trabajadorDTO.getDireccion()),
+                trabajadorDTO.getNombre(),
+                trabajadorDTO.getTelefono(),
+                trabajadorDTO.getDireccion(),
                 trabajadorDTO.getCorreo(),
                 trabajadorDTO.getTipo_usuario(),
                 passwordHash, // 🔐 HASH
@@ -51,9 +51,9 @@ public class TrabajadorServiceImpl implements TrabajadorInterface{
         if (trabajador != null){
             return new TrabajadorDTO(
                     trabajador.getId_trabajador(),
-                    CryptoUtil.desencriptar(trabajador.getNombre()),
-                            CryptoUtil.desencriptar(trabajador.getTelefono()),
-                                    CryptoUtil.desencriptar(trabajador.getDireccion()),
+                    trabajador.getNombre(),
+                    trabajador.getTelefono(),
+                    trabajador.getDireccion(),
                     trabajador.getCorreo(),
                     trabajador.getTipo_usuario(),
                     trabajador.getPassword(),
@@ -87,9 +87,9 @@ public class TrabajadorServiceImpl implements TrabajadorInterface{
             for (TrabajadorEntidad trabajadores : trabajador){
                 trabajadorDTOS.add(new TrabajadorDTO(
                    trabajadores.getId_trabajador(),
-                        CryptoUtil.desencriptar(trabajadores.getNombre()),
-                                CryptoUtil.desencriptar(trabajadores.getTelefono()),
-                                        CryptoUtil.desencriptar(trabajadores.getDireccion()),
+                   trabajadores.getNombre(),
+                   trabajadores.getTelefono(),
+                   trabajadores.getDireccion(),
                    trabajadores.getCorreo(),
                    trabajadores.getTipo_usuario(),
                    trabajadores.getPassword(),
@@ -111,9 +111,9 @@ public class TrabajadorServiceImpl implements TrabajadorInterface{
 
         TrabajadorEntidad entidad = trabajadorExit.get();
 
-        entidad.setNombre(CryptoUtil.encriptar(trabajadorDTO.getNombre()));
-        entidad.setTelefono(CryptoUtil.encriptar(trabajadorDTO.getTelefono()));
-        entidad.setDireccion(CryptoUtil.encriptar(trabajadorDTO.getDireccion()));
+        entidad.setNombre(trabajadorDTO.getNombre());
+        entidad.setTelefono(trabajadorDTO.getTelefono());
+        entidad.setDireccion(trabajadorDTO.getDireccion());
         entidad.setCorreo(trabajadorDTO.getCorreo());
         entidad.setEstado(trabajadorDTO.getEstado());
 
