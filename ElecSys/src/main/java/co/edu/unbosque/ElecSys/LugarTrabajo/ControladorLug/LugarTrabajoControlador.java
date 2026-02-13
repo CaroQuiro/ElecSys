@@ -3,6 +3,7 @@ package co.edu.unbosque.ElecSys.LugarTrabajo.ControladorLug;
 import co.edu.unbosque.ElecSys.LugarTrabajo.DTOLug.LugarTrabajoDTO;
 import co.edu.unbosque.ElecSys.LugarTrabajo.ServicioLug.LugarTrabajoService;
 import co.edu.unbosque.ElecSys.Config.Excepcion.*;
+import co.edu.unbosque.ElecSys.Usuario.Cliente.DTOClie.ClienteDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/lugares-trabajo")
 public class LugarTrabajoControlador {
 
@@ -85,5 +87,19 @@ public class LugarTrabajoControlador {
 
         String mensaje = lugarTrabajoService.editarLugar(id, dto);
         return ResponseEntity.ok(mensaje);
+    }
+
+    @GetMapping("/buscar")
+    public ResponseEntity<List<LugarTrabajoDTO>> buscarLugar(@RequestParam String query){
+        return ResponseEntity.ok(lugarTrabajoService.buscarLugarTexto(query));
+    }
+
+    @GetMapping("/buscar/{id}")
+    public ResponseEntity<LugarTrabajoDTO> buscarLugarId(@PathVariable int id){
+        LugarTrabajoDTO lugar = lugarTrabajoService.buscarLugar(id);
+        if (lugar == null) {
+            throw new ResourceNotFoundException("No existe lugar con ID: " + id);
+        }
+        return ResponseEntity.ok(lugar);
     }
 }

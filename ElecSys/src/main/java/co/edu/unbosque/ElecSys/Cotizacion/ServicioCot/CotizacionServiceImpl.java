@@ -1,6 +1,5 @@
 package co.edu.unbosque.ElecSys.Cotizacion.ServicioCot;
 
-import co.edu.unbosque.ElecSys.AutenticacionSeguridad.SeguridadAut.CryptoUtil;
 import co.edu.unbosque.ElecSys.Cotizacion.DTOCot.CotizacionDTO;
 import co.edu.unbosque.ElecSys.Cotizacion.EntidadCot.CotizacionEntidad;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,14 +16,14 @@ public class CotizacionServiceImpl implements CotizacionInterface{
     private CotizacionRepository cotizacionRepository;
 
     @Override
-    public String agregarCotizacion(CotizacionDTO cotizacion) {
+    public CotizacionDTO agregarCotizacion(CotizacionDTO cotizacion) {
         CotizacionEntidad nuevaCotizacion = new CotizacionEntidad(
-                cotizacion.getId_cotizacion(),
+                null,
                 cotizacion.getId_trabajador(),
                 cotizacion.getId_cliente(),
                 cotizacion.getId_lugar(),
                 cotizacion.getFecha_realizacion(),
-                CryptoUtil.encriptar(cotizacion.getReferencia()),
+                cotizacion.getReferencia(),
                 cotizacion.getValor_total(),
                 cotizacion.getEstado(),
                 cotizacion.getAdministracion(),
@@ -34,10 +33,12 @@ public class CotizacionServiceImpl implements CotizacionInterface{
                 cotizacion.getTotal_pagar()
                 );
         try {
-            cotizacionRepository.save(nuevaCotizacion);
-            return "Cotizacion Creada Exitosamente";
+            CotizacionEntidad cotGuardada = cotizacionRepository.save(nuevaCotizacion);
+            cotizacion.setId_cotizacion(cotGuardada.getId_cotizacion());
+            return cotizacion;
+
         }catch (Exception e){
-            return "Error al crear Cotizacion";
+            return null;
         }
     }
 
@@ -53,7 +54,7 @@ public class CotizacionServiceImpl implements CotizacionInterface{
                     cotizacion.getId_cliente(),
                     cotizacion.getId_lugar(),
                     cotizacion.getFecha_realizacion(),
-                    CryptoUtil.desencriptar(cotizacion.getReferencia()),
+                    cotizacion.getReferencia(),
                     cotizacion.getValor_total(),
                     cotizacion.getEstado(),
                     cotizacion.getAdministracion(),
@@ -85,7 +86,7 @@ public class CotizacionServiceImpl implements CotizacionInterface{
                     cotizaciones.getId_cliente(),
                     cotizaciones.getId_lugar(),
                     cotizaciones.getFecha_realizacion(),
-                    CryptoUtil.desencriptar(cotizaciones.getReferencia()),
+                    cotizaciones.getReferencia(),
                     cotizaciones.getValor_total(),
                     cotizaciones.getEstado(),
                     cotizaciones.getAdministracion(),
@@ -110,7 +111,7 @@ public class CotizacionServiceImpl implements CotizacionInterface{
             entidad.setId_cliente(cotizacion.getId_cliente());
             entidad.setId_lugar(cotizacion.getId_lugar());
             entidad.setFecha_realizacion(cotizacion.getFecha_realizacion());
-            entidad.setReferencia(CryptoUtil.encriptar(cotizacion.getReferencia()));
+            entidad.setReferencia(cotizacion.getReferencia());
             entidad.setValor_total(cotizacion.getValor_total());
             entidad.setEstado(cotizacion.getEstado());
             entidad.setAdministracion(cotizacion.getAdministracion());

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 @RequestMapping("/api/clientes")
 public class ClienteControlador {
 
@@ -33,17 +34,22 @@ public class ClienteControlador {
     }
 
     // =============================
+    // BUSCAR CLIENTE POR TEXTO
+    // =============================
+    @GetMapping("/buscar")
+    public ResponseEntity<List<ClienteDTO>> buscarCliente(@RequestParam String query){
+        return ResponseEntity.ok(clienteService.buscarClienteTexto(query));
+    }
+
+    // =============================
     // BUSCAR CLIENTE POR ID
     // =============================
     @GetMapping("/buscar/{id}")
     public ResponseEntity<ClienteDTO> buscarCliente(@PathVariable int id) {
-
         ClienteDTO cliente = clienteService.buscarCliente(id);
-
         if (cliente == null) {
             throw new ResourceNotFoundException("No existe cliente con ID: " + id);
         }
-
         return ResponseEntity.ok(cliente);
     }
 
@@ -95,7 +101,6 @@ public class ClienteControlador {
 
         // No permitir cambiar ID
         dto.setId_cliente(id);
-
         validarCliente(dto);
 
         String msg = clienteService.actualizarCliente(id, dto);

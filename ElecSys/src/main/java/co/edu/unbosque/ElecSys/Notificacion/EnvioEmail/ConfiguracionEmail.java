@@ -6,7 +6,6 @@ import jakarta.mail.internet.*;
 import jakarta.activation.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
-
 import java.io.File;
 import java.util.Properties;
 
@@ -48,14 +47,20 @@ public class ConfiguracionEmail {
             cuerpo.setContent(mensaje, "text/html; charset=utf-8");
             multipart.addBodyPart(cuerpo);
 
-            if (archivos != null) {
-                for (File archivo : archivos) {
-                    MimeBodyPart adjunto = new MimeBodyPart();
-                    adjunto.setDataHandler(new DataHandler(new FileDataSource(archivo)));
-                    adjunto.setFileName(archivo.getName());
-                    multipart.addBodyPart(adjunto);
-                }
+            //Aqui lo cambie por que me estaba saliendo error, verifica que su funcionamiento este bien.
+            if (archivos != null && !archivos.isEmpty()) {
+
+                MimeBodyPart adjunto = new MimeBodyPart();
+
+                File archivo = File.createTempFile("adjunto", archivos.getOriginalFilename());
+                archivos.transferTo(archivo);
+
+                adjunto.setDataHandler(new DataHandler(new FileDataSource(archivo)));
+                adjunto.setFileName(archivos.getOriginalFilename());
+
+                multipart.addBodyPart(adjunto);
             }
+
 
             mCorreo = new MimeMessage(mSession);
             mCorreo.setFrom(new InternetAddress(email, nombreUsuario));

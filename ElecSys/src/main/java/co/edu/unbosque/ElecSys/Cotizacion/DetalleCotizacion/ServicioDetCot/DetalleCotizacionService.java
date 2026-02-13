@@ -18,7 +18,7 @@ public class DetalleCotizacionService implements DetalleCotizacionInterface{
     @Override
     public String agregarDetalleCot(DetalleCotizacionDTO detalleCotizacionDTO) {
         DetalleCotizacionEntidad nuevodetalle = new DetalleCotizacionEntidad(
-          detalleCotizacionDTO.getId_detalle_cotizacion(),
+                null,
           detalleCotizacionDTO.getId_cotizacion(),
           detalleCotizacionDTO.getDescripcion(),
           detalleCotizacionDTO.getCantidad(),
@@ -68,8 +68,6 @@ public class DetalleCotizacionService implements DetalleCotizacionInterface{
             return "Detalle no actualizado";
         }else {
             DetalleCotizacionEntidad entidad = detalleExist.get();
-            entidad.setId_cotizacion(detalle.getId_cotizacion());
-            entidad.setId_cotizacion(detalle.getId_cotizacion());
             entidad.setDescripcion(detalle.getDescripcion());
             entidad.setCantidad(detalle.getCantidad());
             entidad.setValor_unitario(detalle.getValor_unitario());
