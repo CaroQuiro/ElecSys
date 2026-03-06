@@ -6,9 +6,8 @@ import co.edu.unbosque.ElecSys.Cotizacion.DTOCot.CotizacionDTO;
 import java.util.List;
 
 public interface ContratoInterface {
-    public String agregarContrato(ContratoDTO contrato);
+    public ContratoDTO agregarContrato(ContratoDTO contrato);
     public String borrarContato(int id);
     public List<ContratoDTO> listarcontratos();
-    public String actualizarContrato(int id, ContratoDTO contratodto);
-    //public contratoDto buscarContrato(int id);
+    public ContratoDTO buscarContrato(int id);
 }

@@ -1,14 +1,12 @@
 package co.edu.unbosque.ElecSys.Contrato.EntidadCon;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Entity
@@ -19,8 +17,17 @@ import java.util.Date;
 public class ContratoEntidad {
 
     @Id
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "contrato_seq"
+    )
+    @SequenceGenerator(
+            name = "contrato_seq",
+            sequenceName = "seq_contrato_id",
+            allocationSize = 1
+    )
     @Column(name = "id_contrato")
-    private int id_contrato;
+    private Integer id_contrato;
 
     @Column(name = "id_trabajador")
     private int id_trabajador;
@@ -29,10 +36,10 @@ public class ContratoEntidad {
     private BigDecimal sueldo;
 
     @Column(name = "fecha_expedicion")
-    private Date fecha_expedicion;
+    private LocalDate fecha_expedicion;
 
     @Column(name = "fecha_iniciacion")
-    private Date fecha_iniciacion;
+    private LocalDate fecha_iniciacion;
 
     @Column(name = "id_trabajador_encargado")
     private int id_trabajador_encargado;
@@ -42,4 +49,7 @@ public class ContratoEntidad {
 
     @Column(name = "tipo_contrato")
     private String tipo_contrato;
+
+    @Column(name = "estado")
+    private String estado;
 }

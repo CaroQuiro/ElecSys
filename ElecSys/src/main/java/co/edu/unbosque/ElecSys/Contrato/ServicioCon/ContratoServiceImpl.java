@@ -16,22 +16,27 @@ public class ContratoServiceImpl implements ContratoInterface{
     private ContratoRepository contratoRepository;
 
     @Override
-    public String agregarContrato(ContratoDTO contrato) {
+    public ContratoDTO agregarContrato(ContratoDTO contrato) {
         ContratoEntidad nuevocontrato = new ContratoEntidad(
-                contrato.getId_contrato(),
+                null,
                 contrato.getId_trabajador(),
                 contrato.getSueldo(),
                 contrato.getFecha_expedicion(),
                 contrato.getFecha_iniciacion(),
                 contrato.getId_trabajador_encargado(),
                 contrato.getCargo(),
-                contrato.getTipo_contrato()
+                contrato.getTipo_contrato(),
+                contrato.getEstado()
         );
         try {
-            contratoRepository.save(nuevocontrato);
-            return "Contrato Guardado exitosamente";
+            ContratoEntidad contratoGuardado = contratoRepository.save(nuevocontrato);
+            contrato.setId_contrato(contratoGuardado.getId_contrato());
+            System.out.println("Contrato Guardado exitosamente");
+            return contrato;
+
         }catch (Exception e){
-            return "Error al crear el contrato";
+            System.out.println("Error al crear el contrato");
+            return null;
         }
     }
 
@@ -52,35 +57,38 @@ public class ContratoServiceImpl implements ContratoInterface{
 
         for (ContratoEntidad contratos : contrato){
             contratoDTOS.add(new ContratoDTO(
-               contratos.getId_contrato(),
-               contratos.getId_trabajador(),
+                    contratos.getId_contrato(),
+                    contratos.getId_trabajador(),
                     contratos.getSueldo(),
                     contratos.getFecha_expedicion(),
                     contratos.getFecha_iniciacion(),
                     contratos.getId_trabajador_encargado(),
                     contratos.getCargo(),
-                    contratos.getTipo_contrato()
+                    contratos.getTipo_contrato(),
+                    contratos.getEstado()
             ));
         }
         return contratoDTOS;
     }
 
     @Override
-    public String actualizarContrato(int id, ContratoDTO contratodto) {
-        Optional<ContratoEntidad> contratoExis = contratoRepository.findById(id);
-        if (contratoExis.isEmpty()){
-            return "Contrato no encontrato para actualizar";
-        }else {
-            ContratoEntidad entidad = contratoExis.get();
+    public ContratoDTO buscarContrato(int id) {
+        Optional<ContratoEntidad> contratoopt = contratoRepository.findById(id);
 
-            entidad.setId_trabajador(contratodto.getId_trabajador());
-            entidad.setSueldo(contratodto.getSueldo());
-            entidad.setFecha_expedicion(contratodto.getFecha_expedicion());
-            entidad.setFecha_iniciacion(contratodto.getFecha_iniciacion());
-            entidad.setId_trabajador_encargado(contratodto.getId_trabajador_encargado());
-
-            contratoRepository.save(entidad);
-            return "Contrato Actualizado Correctamente";
+        if (contratoopt.isEmpty()){
+            return null;
         }
+        ContratoEntidad c = contratoopt.get();
+
+        return new ContratoDTO(c.getId_contrato(),
+                c.getId_trabajador(),
+                c.getSueldo(),
+                c.getFecha_expedicion(),
+                c.getFecha_iniciacion(),
+                c.getId_trabajador_encargado(),
+                c.getCargo(),
+                c.getTipo_contrato(),
+                c.getEstado());
     }
+
 }
