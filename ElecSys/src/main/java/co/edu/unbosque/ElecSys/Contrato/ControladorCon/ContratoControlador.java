@@ -110,7 +110,7 @@ public class ContratoControlador {
         ContratoDTO dto = contratoService.buscarContrato(id);
 
         if (dto == null) {
-            throw new ResourceNotFoundException("No existe la cuenta por pagar con ID: " + id);
+            throw new ResourceNotFoundException("No existe el Contrato con ID: " + id);
         }
 
         return ResponseEntity.ok(dto);

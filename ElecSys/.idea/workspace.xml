@@ -4,25 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ArchivoContrato/MetodoCalculoFecha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ArchivoContrato/Pdf_Contrato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/DTOCon/ContratoRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/PlantillaContrato/LogoEmpresa.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/PlantillaContrato/contrato.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/PlantillaContrato/plantilla_contrato_base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ControladorCon/ContratoControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ControladorCon/ContratoControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/DTOCon/ContratoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/DTOCon/ContratoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/EntidadCon/ContratoEntidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/EntidadCon/ContratoEntidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Contrato/ServicioCon/ContratoServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/CuentaPorPagar/ControladorCuen/CuentaPorPagarControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/Archivo/ContenidoArchivo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Cotizacion/Archivo/ContenidoArchivo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/edu/unbosque/ElecSys/Usuario/Trabajador/ControladorTra/TrabajadorControlador.class" afterDir="false" />
-    </list>
+    <list default="true" id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
