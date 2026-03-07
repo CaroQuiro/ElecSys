@@ -178,7 +178,6 @@ public class CuentaPorPagarControlador {
     // ----------------------------------------------------
         @GetMapping("/buscar/{id}")
         public ResponseEntity<CuentaPorPagarDTO> buscarCuenta(@PathVariable int id) {
-
             CuentaPorPagarDTO dto = cuentaPorPagarService.buscarCuenta(id);
 
             if (dto == null) {

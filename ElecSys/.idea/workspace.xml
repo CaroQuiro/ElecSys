@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c6d43819-b866-4cdb-b77c-a13be1d4e669" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +16,7 @@
         <option value="Enum" />
         <option value="Exception" />
         <option value="Interface" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -36,6 +35,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.ElecSysApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JUnit.ElecSysApplicationTests.contextLoads.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -47,7 +47,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Github/ElecSys/ElecSys&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Github/ElecSys/ElecSys/src/main/resources/templates/PlantillaContrato&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
@@ -65,7 +65,11 @@
       <recent name="co.edu.unbosque.ElecSys.Cotizacion.EntidadCot" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Github\ElecSys\ElecSys\src\main\resources\templates\PlantillaContrato" />
       <recent name="C:\Github\ElecSys\ElecSys\src\main\java\co\edu\unbosque\ElecSys" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github\ElecSys\ElecSys\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Application.ElecSysApplication">

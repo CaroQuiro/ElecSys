@@ -8,8 +8,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.3.5</version> <!-- ✅ Usa una versión estable -->
-        <relativePath/> <!-- Importante: evita buscar en local -->
+        <version>3.3.5</version>
+        <relativePath/>
     </parent>
 
     <groupId>co.edu.unbosque</groupId>
@@ -92,6 +92,12 @@
             <groupId>com.itextpdf</groupId>
             <artifactId>layout</artifactId>
             <version>7.2.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.openhtmltopdf</groupId>
+            <artifactId>openhtmltopdf-pdfbox</artifactId>
+            <version>1.0.10</version>
         </dependency>
 
         <!--Email-->
